@@ -1,0 +1,14 @@
+int s=7,b=11;
+void setup() {
+ pinMode(s,INPUT);
+ pinMode(b,OUTPUT); 
+}
+
+void loop() 
+{
+  int v=digitalRead(s);
+  if(v==1)
+  digitalWrite(b,HIGH);
+  else
+  digitalWrite(b,LOW);
+  }
